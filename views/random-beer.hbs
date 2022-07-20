@@ -1,8 +1,19 @@
 {{#each randomBeerArr}}
-<img src="{{this.image_url}}" width="150px">
+{{!-- <img src="{{this.image_url}}" width="120px">
 <p>{{this.name}}</p>
 <p>{{this.description}}</p>
-<p>{{this.tagline}}</p>
-<p>{{this.food_pairing}}</p>
-<p>{{this.brewers_tips}}</p>
+<p>{{this.tagline}}</p> --}}
+{{>beerpartial this}}
+
+<div id="food-pairing"><h3>Food Pairing:</h3>
+    {{#each food_pairing}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+    {{/each}}
+</div>
+<div id="brewers_tips">
+    <h3>Brewers Tips:</h3>
+    <p>{{this.brewers_tips}}</p>
+</div>
 {{/each}}
