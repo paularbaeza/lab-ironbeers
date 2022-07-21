@@ -5,3 +5,29 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+#nav-bar {
+  background-color: #2081c3;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#nav-bar a {
+  margin-left: 30px;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-decoration: none;
+  color: white;
+}
+
+#index{
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-content:center;
+}
+
+#index img{
+    width:300px;
+    }
